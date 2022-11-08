@@ -1,0 +1,121 @@
+// footer section start
+
+footer{
+
+  
+    background-color: #1D1D1D;
+ 
+    .top_footer{
+       padding: 30px 0px;
+    }
+
+
+
+
+  .content{
+  .f-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .f-social-list{
+      width: 45px;
+      list-style: none;
+      margin-left: 10px;
+      cursor: pointer;
+      img{
+        width: 100%;
+      }
+    }
+  }
+   .footer_logo{
+       margin-bottom: 30px;
+   }
+      p{
+       font-size: 13px;
+       line-height: 26px;
+       color: #ffffff;
+       font-weight: 400;
+       
+       text-align: center;
+      }
+  }
+
+
+  .latest_post {
+
+
+   h4{
+       font-size: 22px;
+       line-height: 22px;
+       color: #ffffff;
+       font-weight: 700;
+       font-family: "Exo";
+       margin-bottom: 30px;
+       text-transform: uppercase;
+   }
+
+   .post{
+
+       display: flex;
+       @include max-breakpoints(tablet-small){
+         padding-bottom: 10px;
+       }
+     img{
+       width: 100px;
+       height: 65px;
+     }
+
+
+     .text_content{
+       padding: 0px 20px;
+     @include max-breakpoints(tablet){
+       padding: 0px 10px;
+     }
+       h6{
+           font-size: 15px;
+           line-height: 20px;
+           color: #ffffff;
+           font-weight: 400;
+           font-family: "Roboto";
+           
+       }
+       p{
+           font-size: 13px;
+           line-height: 20px;
+           color: #a3a3a3;
+           font-weight: 400;
+           font-family: "Roboto";
+       }
+     }
+   }
+  }
+
+  .copy_right{
+   border-top: 1px solid #5D5D5D;
+   @include spacing-section-20;
+   
+       p{
+           font-size: 13px;
+           color: #ffffff;
+           font-weight: 400;
+           font-family: "Roboto";
+           margin-bottom: 0px;
+           padding: 5px 0px;
+           @include max-breakpoints(mobile){
+             text-align: center;
+           }
+           
+       }
+   
+       .design{
+           text-align: right;
+       }
+       a{
+         text-decoration: none;
+         color: white;
+       }
+
+  }
+}
+// footer section end
+

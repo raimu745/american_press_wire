@@ -1,0 +1,206 @@
+
+@import '../component/_variable';
+
+.menu_bar_parent{
+
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 10px;
+  
+
+}
+.menu_bar{
+
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.ftco-navbar-light{
+    box-shadow: none;
+    padding: 0px !important;
+	.navbar-brand {
+		display: inline-block;
+		padding-top: 0.9125rem;
+		padding-bottom: 0.9125rem;
+		margin-right: 7rem;
+		font-size: 1.25rem;
+		line-height: inherit;
+		white-space: nowrap;
+        margin-left: -14px ;
+       @include max-breakpoints(tablet){
+        margin-left: 0px ;
+       }
+        @include max-breakpoints(tablet-small){
+            margin-right: 0rem;
+            
+        }
+	}
+	.navbar-nav{
+
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+        align-items: center;
+		margin-right: 0px !important;
+        @include max-breakpoints(tablet){
+            align-items: flex-start;
+        }
+		.nav-item{
+            &:nth-child(7){
+                @include max-breakpoints(tablet){
+                    display: none;
+                }
+            }
+            &:nth-child(8){
+                @include max-breakpoints(tablet){
+                   display: none;
+                }
+            }
+          .nav-link{
+			font-size: 15px;
+			line-height: 34px;
+            text-transform: uppercase;
+			color: #0e0e0e !important;
+			font-weight: bolder;
+			font-family: "Exo";
+            padding: 0px;
+			&:hover{
+				color: $hover-color !important;
+			}
+
+			i{
+				font-size: 35px !important;
+			}
+            .bx-search{
+                margin-right: -25px !important;
+            }
+
+			.openBtn {
+ 
+				cursor: pointer;
+			}
+		  }
+		}
+        .mobile-search{
+            display: none;
+            @include max-breakpoints(tablet){
+                display: flex;
+                justify-content: start;
+               width: 100%;
+            }
+           .nav-item .nav-link i{
+           
+               @include max-breakpoints(tablet){
+                   font-size: 34px;
+               }
+               &::last-child{
+                   padding-left: 20px;
+               }
+            }
+            .bx-cart-alt{
+                @include max-breakpoints(tablet){
+                    padding-left: 50px;
+                }
+            }
+           
+            
+        }
+	}
+
+
+	
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+
+}
+
+.overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+}
+
+.overlay .closebtn:hover {
+    color: #ccc;
+}
+
+.overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+}
+
+.overlay input[type=text]:hover {
+    background: #f1f1f1;
+}
+
+.overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.overlay button:hover {
+    background: #bbb;
+
+}
+.SearchHero{
+  background: #333333;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #ffffff;
+  padding: 20px;
+}
+.SearchHero p{
+  font-size: 13px;
+}
+
+@media (max-width: 991.98px){
+.ftco-navbar-light {
+    background: #fff !important;
+    position: relative;
+    top: 0;
+    padding: 10px 0px;
+
+
+	.navbar-toggler {
+		border: none;
+		color: #000 !important;
+		cursor: pointer;
+		padding-right: 0;
+        padding-left: 0;
+		text-transform: uppercase;
+		font-size: 16px;
+		letter-spacing: .1em;
+
+	}
+}
+
+}

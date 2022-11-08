@@ -1,0 +1,422 @@
+
+
+@import '../component/helper';
+.customer, .contact-sec1, .contact-sec2{
+    padding: 30px  0px 50px 0px;
+
+    .top_img{
+        @include max-breakpoints(mobile){
+            padding-left: 15px !important;
+        }
+    }
+    .content_customer{
+      height: 100%;
+      width: 100%;
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+
+        h2{
+            font-size: 35px;
+        color: #000000;
+        font-weight: 700;
+        font-family: "Exo";
+            }
+
+            p{
+font-size: 14px;
+line-height: 20px;
+color: #7c776c;
+font-weight: 400;
+font-family: "Roboto";
+text-align: left;
+            }
+    }
+
+
+
+    .coverage{
+       .contact-card-detail{
+        .conatct-card-title{
+            h1{
+                font-size: 35px;
+                font-family: 'Exo';
+                font-weight: bold;
+            }
+        }
+        .contact-description{
+            p{
+                font-size: 14px;
+                font-weight: 400;
+                font-family: 'Roboto';
+            }
+        }
+    }
+    img{
+        @include max-breakpoints(tablet-small){
+            width: 100%;
+        }
+    }
+     h2{
+        font-size: 35px;
+        color: #000000;
+        font-weight: 700;
+        font-family: "Exo";
+        margin: 40px 0px 20px 0px;
+        @include max-breakpoints(mobile){
+            font-size: 25px;
+        }
+
+    }
+    
+    .content_coverage{
+        padding: 20px 0px;
+     a{
+font-size: 16px;
+line-height: 14px;
+color: $navy-blue;
+font-weight: 500;
+font-family: "Roboto";
+text-align: left;
+
+    }
+    p{
+        font-family: "Roboto";
+        margin: 15px 0px;
+        color: #7c776c;    
+           font-size: 16px;;
+        font-weight: 500;
+
+       text-align: left;
+    }
+    .font_change{
+        font-family: "Roboto";
+        margin: 15px 0px;
+        color: #7c776c;    
+           font-size: 16px;;
+        font-weight: 500;
+
+       text-align: left;
+    }
+
+}
+
+
+}
+
+   
+}
+.contact-sec2{
+    background-color: #FBFBFB;
+    .order2{
+        order: 2;
+    }
+    .order1{
+        order: 1;
+    }
+}
+
+
+
+
+@include max-breakpoints(tablet-small){
+
+    .customer{
+        // margin-right: 0px;
+     .top_img{
+        width: 100%;
+    }
+    .coverage {
+    h2 {
+       
+        margin: 10px 0px;
+    }
+    
+}
+
+
+}
+
+}
+@include max-breakpoints(small-mobile){
+    .customer{
+     .row{
+        margin-right: 0px;
+        .content_customer{
+            padding-left: 10px;
+        }
+      
+    }
+
+  
+    .coverage{
+        padding-left: 10px;
+    }
+}
+
+    
+}
+
+@include max-breakpoints(tablet){
+    .coverage{
+        align-items: center;
+    }
+}
+
+
+.contact-form{
+    .container{
+        .contact-detail{
+            padding-top: 40px;
+            @include max-breakpoints(tablet-small){
+                padding: 0 !important;
+                padding-top: 20px !important;
+            }
+            .contact-info{
+                .contact-title{
+                    text-align: center;
+                    justify-content: center;
+                    padding-bottom: 10px;
+                    span{
+                        color: $navy-blue;
+                        font-size: 18px;
+                        font-family: 'Exo';
+                        font-weight: bold;
+                        @include max-breakpoints(tablet-small){
+                            font-size: 14px;
+                        }
+                    }
+                    p{
+                        font-size: 18px;
+                        font-family: 'Exo';
+                        font-weight: 400; 
+                        @include max-breakpoints(tablet-small){
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+            }
+            .form{
+
+                form{
+                    @include spacing-section-30;
+                    @include max-breakpoints(tablet-small){
+                        padding: 0px !important;
+                    }
+                    .form-info{
+                        @include max-breakpoints(tablet){
+                            flex-direction: column;
+                        }
+                    .input-field{
+                        display: flex;
+                        flex-direction: column;
+                        padding-bottom: 15px;
+                        @include max-breakpoints(tablet-small){
+                            padding: 0 !important;
+                        }
+                        input{
+                            width: 100%;
+                            padding: 15px;
+                            background-color: #F5F5F5;
+                            border: none;
+                            outline: none;
+                            border-radius: 8px;
+                            margin-bottom: 10px;
+                        }
+                    }
+                    .textarea-field{
+                        padding-bottom: 15px;
+                        @include max-breakpoints(tablet-small){
+                            padding: 0 !important;
+                        }
+                        textarea{
+                            width: 100%;
+                            padding: 15px ;
+                            background-color: #F5F5F5;
+                            border: none;
+                            outline: none;
+                            border-radius: 8px;
+                            padding-bottom: 25px;
+                        }
+                    }
+                }
+                .contact-btn{
+                    @include max-breakpoints(tablet-small){
+                        padding-top: 15px;
+                    }
+                    a{
+                        @include flex-c-c;
+                        width: 300px;
+                        height: 50px;
+                        background-color: $navy-blue;
+                        border-radius: 8px;
+                        margin: auto;
+                        font-size: 18px;
+                        font-family: 'Exo';
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        color:  #ffffff;
+                        @include max-breakpoints(tablet-small){
+                            width: 280px;
+                        }
+                        margin-bottom: 15px;
+
+                    }
+                }
+                }
+            }
+        }
+    }
+}
+
+.home-bottom{
+    .btm-main{
+        @include max-breakpoints(mobile){
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+}
+
+// login start
+
+.login{
+    background-color: #F5F5F5;
+    .container{
+        @include spacing-section-50;
+        .login-info{
+            width: 450px;
+            background-color: #ffffff;
+            margin: auto;
+            border-radius: 8px;
+            @include spacing-section-30;
+            padding-left: 70px;
+            padding-right: 70px;
+            box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.15);
+              @include max-breakpoints(mobile){
+                  width: 100%;
+                  padding-left: 15px;
+                  padding-right: 15px;
+              }
+            .login-details{
+                .login-title{
+                    padding-bottom: 50px;
+                    @include max-breakpoints(mobile){
+                        padding-bottom: 20px;
+                    }
+                    h1{
+                        font-size: 35px;
+                        font-family: "Exo";
+                        font-weight: bold;
+                        text-align: center;
+                        margin-bottom: 0;
+                    }
+                    h4{
+                        font-size: 18px;
+                        font-family: "Exo";
+                        font-weight: bold;
+                        text-align: center;
+                        color: #be0b31;
+                        text-transform: uppercase;
+                    }
+                }
+                .login-form{
+                    form{
+                        .name{
+                            position: relative;
+                            padding-bottom: 15px;
+                            input{
+                                width: 100%;
+                                height: 50px;
+                                background-color: #F5F5F5;
+                                border: none;
+                                outline: none;
+                                border-radius:4px;
+                                padding: 10px 56px 10px 10px;
+                            }
+                            .icon{
+                                position: absolute;
+                                background-color: $navy-blue;
+                                width: 50px;
+                                height: 50px;
+                                @include flex-c-c;
+                                border-radius:4px;
+                                right: 0;
+                                top: 0;
+                            }
+                        }
+                        .password{
+                            position: relative;
+                            padding-bottom: 50px;
+                            @include max-breakpoints(mobile){
+                                padding-bottom: 20px;
+                            }
+                            input{
+                                width: 100%;
+                                height: 50px;
+                                background-color: #F5F5F5;
+                                border: none;
+                                outline: none;
+                                border-radius:4px;
+                                padding: 10px 56px 10px 10px;
+                            }
+                            .icon{
+                                position: absolute;
+                                background-color: $navy-blue;
+                                width: 50px;
+                                height: 50px;
+                                @include flex-c-c;
+                                border-radius:4px;
+                                right: 0;
+                                top: 0;
+                            }
+                        }
+                        .login-btn{
+                            
+                           a{
+                               @include flex-c-c;
+                            width: 100%;
+                            height: 50px;
+                            background-color: $bg-color;
+                            border: none;
+                            outline: none;
+                            border-radius:4px;
+                            color: #ffffff;
+                            font-size: 18px;
+                        font-family: "Exo";
+                        font-weight: bold;
+                        text-transform: uppercase;
+                           } 
+                        }
+                        .forget-ps{
+                            text-align: center;
+                            @include spacing-section-30;
+                            a{
+                               
+                                font-size: 14px;
+                                font-family: 'Exo';
+                                font-weight: 400;
+                                color: #7c776c;
+                                text-transform: uppercase;
+                            }
+                            p{
+                                padding-top: 20px;
+                                font-size: 16px;
+                                font-family: 'Exo';
+                                font-weight: 400;
+                                color: #7c776c;
+                                text-transform: uppercase;
+                                a{
+                                    font-weight: bold;
+                                    color: $bg-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//  Login end

@@ -1,0 +1,102 @@
+@import '../component/variable';
+@import '../component/button';
+
+
+
+.hero_section{
+  .container{
+      padding-left: 0px !important;
+      .hero_1{
+          @include max-breakpoints(tablet-small){
+              padding-left: 0px !important;
+              padding-right: 0px !important;
+              margin-bottom: 10px;
+          }
+          @include max-breakpoints(mobile){
+              padding-left: 15px !important;
+              padding-right: 15px !important;
+          }
+      }
+  }
+    .content{
+        position: relative;
+    
+       img{
+        height: 465px;
+        width: 100%;
+            transition: 0.5s all;
+            object-fit: fill;
+       @include max-breakpoints(tablet-small){
+           height: auto;
+       }
+       }
+
+
+
+       .bg_color{
+        background-color: rgba(0 ,0,0,0.5);
+       }
+        .content_text{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 25px;
+            width: 100%;
+            @include max-breakpoints(tablet-small){
+                padding: 15px;
+            }
+            .hero_btn{
+                @include hero-button();
+                &:hover{
+                    background-color: #000;
+                }
+            }
+
+            p{
+                     font-size: 23px;
+                    color: #ffffff;
+                    font-weight: 700;
+                    font-family: "Exo";
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    margin-bottom: 0px;
+                    @include max-breakpoints(mobile){
+                        font-size: 15px;
+                        padding-top: 2px;
+                        padding-bottom: 2px;
+                    }
+            }
+
+
+
+            small{
+                font-size: 13px;
+                font-family: 'roboto';
+                color: #fff;
+            }
+        }
+    }
+
+
+}
+
+
+
+@media (max-width:767px){
+
+    .hero_section{
+  
+        .container{
+            padding-left: 15px !important;
+        }
+        .content{
+
+             img{
+                width: 100%;
+             }
+        }
+    
+    }
+
+
+}

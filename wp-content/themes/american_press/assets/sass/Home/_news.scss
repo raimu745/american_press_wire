@@ -1,0 +1,624 @@
+@import '../component/progress';
+
+
+
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin heading {
+    font-size: 18px;
+    line-height: 36px;
+    color: #010101;
+    font-weight: 900;
+    font-family: "Roboto";
+}
+
+
+.progress_padding{
+    padding-right: 5px !important;
+    @include max-breakpoints(tablet-small){
+        padding-right: 0px !important;
+    }
+
+}
+.padding_right_0{
+    padding-right: 0px;
+}
+
+
+.news_section{
+
+     padding: 30px 0px;
+     @include max-breakpoints(mobile){
+         padding-left: 15px;
+         padding-right: 15px;
+     }
+      
+
+     .heading_parent{
+
+        @include flex();
+        h3{
+           @include heading();
+           text-transform: uppercase;
+        }
+        a{
+            text-decoration: none;
+            font-size: 13px;
+            line-height: 36px;
+            color: #9f9f9f;
+            font-weight: 300;
+            font-family: "Roboto";
+
+            &:hover{
+                color: $hover-color;
+            }
+        }
+     }
+    .progress{
+        @include progress();
+    }
+
+  
+
+    .news_card{
+
+        padding: 30px 0px 0px 0px;
+
+        img{
+            height: 240px;
+            width: 375px;
+        }
+       
+
+        .content {
+            
+            h3{
+            font-size: 20px;
+            color: #000000;
+            font-weight: 700;
+            font-family: "Exo";
+            padding: 10px 0px;
+            margin-bottom: 0px;
+            line-height: normal !important;
+        }
+        p{
+           
+            font-size: 14px;
+            line-height: 20px;
+            color: #7c776c;
+            font-weight: 400;
+            font-family: "Roboto";
+            text-align: justify;
+            margin: 10px 0px 0px 0px;
+        }
+        span{
+            font-size: 12px;
+                color: #b2aaaa;
+                font-weight: 300;
+                font-family: "Roboto";
+
+                small{
+                    color: $navy-blue;
+                }
+        }
+         
+    
+
+    }
+    }
+
+}
+
+
+
+
+
+
+// article section 
+
+.article{
+    
+    .fixture{
+        display: flex;
+        
+        button{
+            @include heading();
+            margin-right: 20px;
+            padding: 3px;
+            text-transform: uppercase;
+            line-height: 27px !important;
+        }
+
+        .nav-tabs .nav-link {
+            background-color: transparent !important;
+        }
+        .nav-tabs {
+            
+            border: none !important;
+        }
+
+        .nav-tabs .nav-link:hover {
+            border-color: #fff;
+            isolation: isolate;
+            color: $hover-color;
+        }
+       
+    }
+    .heading_parent{
+      @include flex();
+
+
+
+      h3{
+        @include heading();
+        line-height: normal !important;
+        text-transform: uppercase;
+    }
+
+    a{
+        text-decoration: none;
+        font-size: 13px;
+        line-height: 36px;
+        color: #9f9f9f;
+        font-weight: 300;
+        font-family: "Roboto";
+
+        &:hover{
+            color: $hover-color;
+        }
+    }
+    }
+
+
+    .progress{
+        @include progress();
+    }
+    
+
+
+
+
+        .content {
+            
+            margin-top: 20px;
+            h3{
+            font-size: 20px;
+            color: #000000;
+            font-weight: 700;
+            font-family: "Exo";
+            padding: 10px 0px;
+            margin-bottom: 0px;
+
+
+            img{
+                height: 240px;
+                width: 375px;
+            }
+        }
+        p{
+           
+            font-size: 14px;
+            line-height: 20px;
+            color: #7c776c;
+            font-weight: 400;
+            font-family: "Roboto";
+            text-align: justify;
+            margin-top: 10px;
+        }
+        span{
+            font-size: 12px;
+                color: #b2aaaa;
+                font-weight: 300;
+                font-family: "Roboto";
+
+                small{
+                    color: $navy-blue;
+                }
+        }
+      h4{
+        font-size: 19px;
+        line-height: 34px;
+        color: $navy-blue;
+        font-weight: 700;
+        font-family: "Exo";
+      }
+
+      .country{
+
+        font-size: 14px;
+        color: #000000;
+        font-weight: 700;
+        font-family: "Exo";
+        padding: 10px 0px;
+
+    }
+.flag-bar{
+    &:not(:last-child){
+        border-bottom: 1px solid #e7e7e7 !important;
+    }
+    .flag-left{
+        padding-right: 10px;
+    }
+    .flag-mid{
+        width: 60px;
+    }
+    .flag-right{
+        padding-left: 10px;
+    }
+}
+    }
+   
+    .flag{
+        display: flex;
+        // background-color: #000000;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            margin-right: 10px;
+        }
+        
+    img{
+        height: 50px;
+        width: 40px !important;
+    }
+    }
+
+   
+    .goal{
+        background-color: #ededed;
+        
+
+       p{ padding: 5px;
+
+        font-size: 14px;
+        color: #000000;
+        font-weight: 700;
+        font-family: "Exo";
+        
+       }
+    }
+    
+}
+
+
+
+
+
+
+// sports section start
+
+.sport{
+    .sport_1{
+        @include max-breakpoints(min-max-mob){
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+    }
+margin-bottom: 30px;
+    .heading_parent{
+        @include flex();
+  
+    }
+  
+        h3{
+          @include heading();
+          text-transform: uppercase;
+      }
+
+      a{
+        text-decoration: none;
+        font-size: 13px;
+        line-height: 36px;
+        color: #9f9f9f;
+        font-weight: 300;
+        font-family: "Roboto";
+
+        &:hover{
+            color: $hover-color;
+        }
+    }
+
+
+    
+    .progress{
+        @include progress();
+    }
+ 
+    .content {
+            
+        margin-top: 20px;
+        h3{
+        font-size: 20px;
+        color: #000000;
+        font-weight: 700;
+        font-family: "Exo";
+        padding: 10px 0px;
+        margin-bottom: 0px;
+        line-height: normal !important;
+        text-transform: capitalize;
+    }
+    p{
+       
+        font-size: 14px;
+        line-height: 20px;
+        color: #7c776c;
+        font-weight: 400;
+        font-family: "Roboto";
+        text-align: justify;
+        margin-top: 10px;
+    }
+    span{
+        font-size: 12px;
+            color: #b2aaaa;
+            font-weight: 300;
+            font-family: "Roboto";
+
+            small{
+                color: $navy-blue;
+            }
+    }
+}
+
+.news_small_section{
+
+margin-top: 20px;
+    .small_content {
+        
+margin-bottom: 20px;
+@include max-breakpoints(tablet-small){
+    padding: 0px;
+}
+        h6{
+        font-size: 14px;
+        line-height: 19px;
+        color: #000000;
+        font-weight: 700;
+        font-family: "Exo";
+        margin-top: 10px;
+    
+    }
+    small{
+        font-size: 12px;
+color: #b2aaaa;
+font-weight: 300;
+font-family: "Roboto";
+margin-bottom: 20px;
+    }
+
+    img{
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+       &:nth-child(even){
+        margin: 0px 0px 0px 0px;
+       }
+       &:nth-child(odd){
+        margin: 0px 0px 0px 0px;
+       }
+        @include max-breakpoints(notebook){
+            width: 140px;
+        }
+        @include max-breakpoints(tablet){
+            width: 100%;
+        }
+    }
+
+}
+
+
+
+}
+
+  
+
+.gallery_parent{
+    padding-right: 15px;
+    @include max-breakpoints(mobile){
+        padding-left: 15px;
+        width: 100%;
+        padding-right: 0px;
+    }
+    .gallery_parent_1{
+        @include max-breakpoints(mobile){
+            padding-right: 0px;
+        }
+    }
+    .content{
+
+             h5{
+
+
+                font-size: 14px;
+                    line-height: 19px;
+                    color: #000000;
+                    font-weight: 500;
+                    font-family: "Exo";
+             }
+
+    } 
+}
+
+.sidebar{
+    
+        img{
+
+            height: 240px;
+            width: 360px;
+
+
+            h3{
+                font-size: 20px;
+                color: #000000;
+                font-weight: 700;
+                font-family: "Exo";
+                margin-bottom: 0px;
+            }
+        }
+   
+}
+.side{
+    background-color: #F9FDFF ;
+    padding-bottom: 5px;
+    @include max-breakpoints(desktop){
+        padding-left: 28px;
+    }
+}
+}
+
+
+
+// sports section end 
+
+
+
+// subscribe section start
+
+  .subscribe{
+
+    background-color: $navy-blue;
+    padding: 50px 0px;
+    .content{
+
+        text-align: center;
+        h5{
+            font-size: 25px;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Exo";
+        }
+        p{
+           
+            font-size: 16px;
+            line-height: 20px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Roboto";
+          
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input{
+            height: 40px;
+            width: 330px;
+            padding: 10px;
+            border: none;
+            outline: none;
+            @include max-breakpoints(mobile){
+                width: 100%;
+            }
+        }
+        button{
+            height: 40px;
+            width: 330px;
+            background-color: #000000;
+            margin-top: 5px;
+            font-size: 17px;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Exo";
+            outline: none;
+            border: none;
+            text-transform: uppercase;
+            transition: 0.5s all;
+            @include max-breakpoints(mobile){
+                width: 100%;
+            }
+            &:hover{
+
+                background-color: $bg-color;
+                
+
+
+            }
+
+        }
+
+
+    }
+
+
+
+
+  }
+
+// subscribe section end 
+
+
+
+
+
+
+
+
+// @media Query start
+
+@media(max-width:991px) and (min-width:768px){
+
+
+    
+}
+
+@media(max-width:767px){
+
+    .news_section{
+        .news_card{
+
+                 img{
+                    width: 100%;
+                    height: auto;
+                 }
+
+        }
+
+
+    }
+
+
+    .article{
+        
+        .article_2{
+            @include max-breakpoints(min-max-mob){
+                padding-right: 0px !important;
+                padding-left: 0px !important;
+            }
+        }
+        .content{
+            .row{
+                margin-right: 0 !important;
+                margin-left: -2px;
+            }
+            img{
+            width: 100%;
+            }
+        }
+    }
+
+
+    .sport{
+
+          .content{
+            img{
+                width: 100%;
+            }
+          }
+
+
+          .news_small_section{
+            .small_content{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+          }  
+
+    }
+}
+// @media Query end 
